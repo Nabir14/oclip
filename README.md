@@ -10,7 +10,10 @@ oClip is a program that can copy text from an image to the clipboard.
 **Available Platforms:** Windows, Linux.
 
 **Compile From Source:**
-- Clone The Repo
+- Clone The Repo:
+```sh
+git clone https://github.com/Nabir14/oclip.git
+```
 - Open Repo Directory:
 ```sh
 cd oclip
