@@ -7,7 +7,7 @@ oClip is a program that can copy text from an image to the clipboard.
 - This image is then provided to Tesseract OCR to scan and extract the text.
 - Tkinter is used for Ui and this let's you copy the extracted text to your clipboard.
 
-**Available Platforms:** Windows, Linux.
+**Available Platforms:** Windows.
 
 **Compile From Source:**
 - Clone The Repo:
@@ -23,24 +23,14 @@ cd oclip
 python3 -m venv .env
 ```
 - Activate Environment:
-**Windows:**
 ```ps
-.\.env\bin\activate.ps1
-```
-**Linux:**
-```sh
-./env/bin/activate
+.\.env\Scripts\activate.ps1
 ```
 - Install Deps:
 ```py
 pip install pillow pytesseract pyinstaller
 ```
 - Build:
-**Windows:**
-```py
-pyinstaller --onefile --windowed --icon=icon.ico --add-data "assets;assets" --add-data "tesseract;tesseract" .\main.py
-```
-**Linux:**
 ```py
 pyinstaller --onefile --windowed --icon=icon.ico --add-data "assets;assets" --add-data "tesseract;tesseract" .\main.py
 ```
@@ -49,4 +39,4 @@ pyinstaller --onefile --windowed --icon=icon.ico --add-data "assets;assets" --ad
 deactivate
 ```
 
-This will create an executable in dist folder for the host operating system.
+This will create an executable in dist folder for Windows.
