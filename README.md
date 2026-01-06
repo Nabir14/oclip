@@ -2,41 +2,14 @@
 
 oClip is a program that can copy text from an image to the clipboard.
 
-**How It Works:**
-- It uses `ImageGrab` from `Pillow` and lets you "snip" the portion of the image you want to copy.
-- This image is then provided to Tesseract OCR to scan and extract the text.
-- Tkinter is used for Ui and this let's you copy the extracted text to your clipboard.
+**Information:**
+- version: `1.0`
+- platforms: `Windows`
 
-**Available Platforms:** Windows.
+**How It Works:**
+- It uses `ImageGrab` from `Pillow` and lets you clip the portion of the image you want to scan.
+- This image is then provided to Tesseract OCR to scan and extract the text.
+- Tkinter is used for UI and this let's you preview the snipped image or copy the extracted text to your clipboard.
 
 **Compile From Source:**
-- Clone The Repo:
-```sh
-git clone https://github.com/Nabir14/oclip.git
-```
-- Open Repo Directory:
-```sh
-cd oclip
-```
-- Setup Environment:
-```sh
-python3 -m venv .env
-```
-- Activate Environment:
-```ps
-.\.env\Scripts\activate.ps1
-```
-- Install Deps:
-```py
-pip install pillow pytesseract pyinstaller
-```
-- Build:
-```py
-pyinstaller --onefile --windowed --icon=icon.ico --add-data "assets;assets" --add-data "tesseract;tesseract" .\main.py
-```
-- Deactivate Environment After Build:
-```py
-deactivate
-```
-
-This will create an executable in dist folder for Windows.
+To Compile oClip from source [follow this guide](docs/BUILD.md).
