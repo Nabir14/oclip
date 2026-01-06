@@ -1,5 +1,7 @@
 # oClip - Optical Clipboard
 
+![preview](assets/preview.gif)
+
 oClip is a program that can copy text from an image to the clipboard.
 
 **Information:**
